@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Users</title>
+</head>
+<body>
+    <button onclick="greetingUser()">click me</button>
+    <script>
+        function greetingUser(){
+            let user=prompt("enter the user name");
+            if (user){
+                document.body.innerHTML="<p> Hellow , "+user + "! Welcome </p>";
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Clock Examples</title>
+</head>
+<body>
+    <h2>Live Clock</h2>
+    <p id="demo"></p>
+    <script>
+        function updateClock(){
+            let now=new Date();
+
+            document.getElementById("demo").innerHTML=now.toLocaleTimeString();
+        }
+        setInterval(updateClock,1000);
+    </script>
+</body>
+</html>
