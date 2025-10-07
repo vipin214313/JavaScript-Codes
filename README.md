@@ -94,6 +94,6 @@ agar unhe function ke bahar (global level par) declare kiya gaya ho.
 let aur const window object pe attach nahi hote. 
 
 Data types:
-JavaScript is a dynamic type language → You don’t need to declare the type of variable (JS decides automatically).
+JavaScript is a dynamic type language → You don’t need to declare the type of variable (JS decides automatically).  
 
 
