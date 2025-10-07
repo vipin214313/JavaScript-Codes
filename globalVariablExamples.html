@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Examples</title>
+</head>
+<body>
+    <script>
+        var g1="global var1";
+          let g2="global var2";
+            const g3="global var3";
+            function myFun(){
+                console.log("inside a function");
+                console.log(g1);
+                console.log(g2);
+                console.log(g3);
+            }
+            // 2. Global variable via window object (Browser only)
+            function setGlobal() {
+                   window.winVar = "📦 I came from window object!";
+                    }
+                 function useGlobal() {
+                    console.log("Accessing window variable:", window.winVar);
+                        }
+
+                        // 3. Creating Global variable INSIDE a function
+                        function makeGlobalInsideFn() {
+                         window.newGlobal = "🔓 Declared inside fn but global via window";
+                            }
+
+            myFun();
+            setGlobal();
+            useGlobal();
+            makeGlobalInsideFn();
+            console.log(newGlobal);
+            console.log(window.g1);
+            // console.log(window.g2); //undefine
+            // console.log(window.g3);  //undefine
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Variables Examples</title>
+</head>
+<body>
+    <h2>Global Variables Examples</h2>
+    <script>
+        var data=200;
+        function fn(){
+            console.log(data);
+            window.value="hellow windows..";
+        }
+        function fn2(){
+            console.log(data);
+            alert("window.value");
+        }
+        fn();
+        fn2();
+    </script>
+    
+</body>
+</html>

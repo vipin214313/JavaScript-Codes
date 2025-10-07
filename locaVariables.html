@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local variables</title>
+</head>
+<body>
+    <!-- a variables is a containers are used to stored  data values.it acts as a symbole for memory location. -->
+    <h1>Local variables :</h1>
+    <p>Local variables declared inside a function or block it is accessible function or block only </p>
+    <script>
+        var a=10;
+        function varLocal(){
+            var b=20;
+            let a1=25;
+            const b1=30;
+            console.log(b);
+            console.log(a);  //becuse become global
+            console.log(a1);
+            console.log(b1);
+        {
+            var c=20;
+            console.log(c);
+            console.log(a1);
+            console.log(b1);
+        }
+        console.log(c);
+        }
+        varLocal();
+      //  console.log(b);//not access
+    //   console.log(c);
+    // console.log(a1);
+    // console.log(b1);
+    </script>
+    
+</body>
+</html>

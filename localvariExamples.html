@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local variables Examples</title>
+</head>
+<body>
+    <h1>Loacal Variables Examples</h1>
+    <script>
+       
+        function  locvarFunc(){
+             var a=10;
+        let b=20;
+        const c=30;
+            console.log(a);
+            console.log(b);
+            console.log(c);
+            if (true){
+                  var a2 = 100;   // var -> leaks outside block
+        let b2 = 200;   // let -> only inside this block
+        const c2 = 300; // const -> only inside this block
+        console.log(a);
+            console.log(b);
+            console.log(c);
+            }
+            console.log(a2);
+           // console.log(b2);
+        }
+        locvarFunc();
+     //   console.log(a);
+     //       console.log(b);
+      //      console.log(c);
+    </script>
+    
+</body>
+</html>
