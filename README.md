@@ -96,4 +96,17 @@ let aur const window object pe attach nahi hote.
 Data types:
 JavaScript is a dynamic type language → You don’t need to declare the type of variable (JS decides automatically).  
 
-
+Primitive Data Types
+The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as in-built data types.
+1-number
+2-string
+3-Boolean
+4-null
+5-undefined
+6-Symbol
+7-BigInt
+🔹 Non-Primitive (Reference) Data Types:
+Non-primitive data types, also known as reference types, are objects and derived data types. They can store collections of values or more complex entities.
+1-object
+2-array
+3-function
