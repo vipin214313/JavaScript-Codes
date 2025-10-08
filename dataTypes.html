@@ -8,18 +8,34 @@
 </head>
 <body>
     <script>
-
-    //string 
-let name="jon";
-let grrestack='hellow,'+name;
-console.log(grrestack);
-//number
-let age=25;
-console.log(age);
-let isActive=true;
-console.log(isActive);
-let x;
-console.log(x);
-    </script>
+        //primitive data-types
+        let name="aliece";  //sstring
+        let age=25  //number
+        let isMember=true;  //Boolean
+        let address;  //undefined
+        let contact=null  //null
+        let userSymbol=Symbol("id");
+        let bigNumber=12335596959466595466651655665662669299n;
+        console.log(name);
+        console.log(age);
+        console.log(isMember);
+        console.log(address);
+        console.log(contact);
+        console.log(userSymbol);
+        console.log(bigNumber);
+        //non-primitive data types
+        let obj={
+            name:"jon",
+            age:25,
+            country:"USA"
+        };
+        console.log(obj);
+        let color=["red","green","Blue"]
+        console.log(color);
+        function add(a,b){
+            return a+b;
+        }
+        console.log(add(10,20));
+</script>
 </body>
 </html>

@@ -110,3 +110,21 @@ Non-primitive data types, also known as reference types, are objects and derived
 1-object
 2-array
 3-function
+
+Variables:
+"A JavaScript variable is a container that stores data values. It acts as a symbolic name for a memory location. Variables are used to hold data that can be accessed or manipulated in the program."  
+4. Types of Variables in JavaScript
+In modern JavaScript, we mainly have three types of variable declarations:
+Type	Scope / Usage	Can be Reassigned?	Example
+var	Function-scoped, can be redeclared	Yes	var age = 25;
+let	Block-scoped, cannot be redeclared	Yes	let score = 50;
+const	Block-scoped, cannot be redeclared	No (constant)	const pi = 3.14;
+
+Templat Literals Key Features
+    1. Backticks (`) Instead of Quotes (' or "):
+        ○ Template literals are enclosed in backticks (`) instead of single (') or double (") quotes.
+        
+        let name = "Vipin";
+console.log(`Hello, ${name}!`); // Output: Hello, Vipin!
+
+   
