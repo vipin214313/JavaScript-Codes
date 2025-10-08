@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clousers Examples</title>
+</head>
+<body>
+    <script>
+        function outerFun(){
+            let a=10;
+          return  function innerFun(){
+                console.log(a);
+            }
+        }
+ let fn=outerFun();
+fn();
+    </script>
+    
+</body>
+</html>
