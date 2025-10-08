@@ -129,4 +129,21 @@ console.log(`Hello, ${name}!`); // Output: Hello, Vipin!
 
 🔹 Proper Definition of Closure
 "A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment)". In other words, a closure gives a function access to its outer scope. In JavaScript, closures are created every time a function is created, at function creation time.
+
+Operators:JavaScript operators are symbols or keywords that perform operations on operands (values, variables, or expressions). Operators can be classified into:
+    1. Arithmetic
+    2. Assignment
+    3. Comparison
+    4. Logical
+    5. Bitwise
+    6. Ternary
+    7. Comma
+    8. Unary
+    9. Relational
+    10. BigInt
+String
+
+conditional statement:
+JavaScript conditional statements execute code based on true/false conditions.  
+1-if-statement
    

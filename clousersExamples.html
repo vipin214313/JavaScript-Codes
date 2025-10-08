@@ -6,7 +6,7 @@
     <title>Clousers Examples</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         function outerFun(){
             let a=10;
           return  function innerFun(){
@@ -15,6 +15,30 @@
         }
  let fn=outerFun();
 fn();
+    </script> -->
+    <!-- <script>
+        function outer(){
+            let outerScopt="i am the outer scope ";
+            function inner(){
+                console.log(outerScopt);
+                outerScopt="updated";
+            }
+            return inner();
+        }
+        let clousers1=outer();
+        console.log(clousers1);
+        clousers();
+    
+    </script> -->
+    <script>
+        function init(){
+            let name="shyam my frend";
+            function displayName(){
+                console.log(name);
+            }
+            displayName();
+        }
+        init();
     </script>
     
 </body>
