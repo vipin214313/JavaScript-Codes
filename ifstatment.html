@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //if-statement
+        let marks=80;
+        if(marks%2==0){
+            console.log("even number");
+        }if(marks%2 !=0){
+            console.log("this is odd numbers");
+        }
+    </script>
+    <script>
+        //if-else-statement
+        let age=25;
+        if (age>=18){
+            console.log("u are eligible for vote");
+        }else{
+            console.log("u are not eligible for vote");
+        }
+    </script>
+    <script>
+        //nested if statement
+        let markss=70;
+        if (markss>=33){
+            console.log("u are passed");
+            if(markss>=75){
+                console.log("u are passed with disatction");
+            }else{
+                console.log("u are not passed with distaction")
+            }
+        }else{
+            console.log("u are fail");
+        }
+    </script>
+    <script>
+        //else if statement
+        let num =5;
+        if(num>0){
+            console.log("pastive number");
+        }else if (marks<0){
+            console.log("negative number");
+        }else{
+            console.log("zero");
+        }
+    </script>
+    <script>
+        //switch statement
+        let day=3;
+        let dayName;
+
+        switch(day){
+            case 1:
+                dayName="monday";
+                break;
+                case 2:
+                    dayName="tuesday";
+                    break;
+                    case 3:
+                        dayName="wednesday";
+                        break;
+                        case 4:
+                            dayName="thursday";
+                            break;
+                            case 5 : 
+                            dayName="friday";
+                            break;
+                            case 6 :
+                                dayName="saturday";
+                                break;
+                                case 7:
+                                    dayName="sunday";
+                                    break;
+                                    default:
+                                        dayName="invalid";
+        }
+        console.log(dayName);
+    </script>
+    <script>
+        //ternery operators it is short form of if-else satetemnt
+        let age2=21;
+        const results=(age>=18)?"u are  elgible for votes ":"u are not eligbile for votes;";
+        console.log(results);
+    </script>
+    
+</body>
+</html>

@@ -145,5 +145,26 @@ String
 
 conditional statement:
 JavaScript conditional statements execute code based on true/false conditions.  
-1-if-statement
-   
+Conditional Statement	Description
+if	Executes a block if the condition is true
+else	Executes a block if the preceding if is false
+else if	Tests multiple alternative conditions
+switch	Executes a block based on expression value
+Ternary ?:	Short-hand single-line if-else
+Nested if-else	Multiple hierarchical conditions
+🟦 JavaScript Loops 
+Loops in JavaScript are used to repeat a block of code as long as a condition is true. They are essential for handling repetitive tasks efficiently.
+
+🎯 Why Loops Are Used
+    • To reduce code repetition
+    • To perform repeated tasks automatically
+    • To iterate over arrays or objects
+ 
+🧠 Types of Loops in JavaScript
+Type	Description
+for	Runs a block of code a specific number of times
+while	Runs while a condition is true
+do...while	Runs at least once, then checks condition
+for...in	Loops through object properties
+for...of	Loops through iterable values (arrays, strings, etc.)
+
