@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global variables examples</title>
+</head>
+<body>
+    <h2>global variables are declared outside a function or block and it is acessible any where in the programes</h2>
+    <script>
+        var num =100;
+        let num2=200;
+        const num3=400;
+        function myfun(){
+            console.log(num);
+            console.log(num2);
+            console.log(num3);
+            if(true){
+                console.log(num);
+                console.log(num2);
+                console.log(num3);
+            }
+        }
+        myfun();
+
+        function mufunction2(){
+            window.value=100;
+            
+        }
+        function winVal(){
+            alert(window.value);
+        }
+        mufunction2();
+        winVal();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loacal variables examples</title>
+</head>
+<body>
+    <p>a variables ia a conatiners thet are used to store a data values. it act as a symbole for memory location</p>
+    <h1>local variables declared inside a function or block it is accessible function or block only</h1>
+    <script>
+        function mufun(){
+            var a=15;
+            let num=200;
+            const num2=2300;
+            console.log(a);
+            if(true){
+                var a1=20;
+                console.log(a1);
+                console.log(a);
+                console.log(num);
+                console.log(num2);
+                let c=10;
+                console.log(c);
+                const d=2;
+                console.log(d);
+            }
+            console.log(a1);
+            console.log(a);
+            //console.log(d);
+           // console.log(c);
+        }
+        mufun();
+        // console.log(a);
+    </script>
+    
+</body>
+</html>
