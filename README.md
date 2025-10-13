@@ -1,4 +1,4 @@
-#### JavaScript-Codes  #####
+#### JavaScript practice projects and exercises #####
 
 javaScript is a programming language it is used for creating dynamic content on website . it is lightweight , cross-platform, single threaded programming language.
 
