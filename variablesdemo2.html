@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vraibles demos</title>
+</head>
+<body>
+    <script>
+        var data =220;
+        
+        function add(){
+            var num1=10;
+            var num2=20;
+            var results=num1+num2;
+            document.write("reslts is: "+ results);
+
+            document.write("<br/>");
+            document.write("data is ",data);
+            console.log(typeof(data));
+            
+        }
+        function substract(){
+            var pi=3.14;
+            document.write(pi);
+            pi=0.05;
+
+        
+        }
+        add();
+        substract();
+    </script>
+    <input type="button"  value="add" onclick="add()"/>
+    <input type="button"  value="substract"  onclick="substract()"/>
+    
+</body>
+</html>

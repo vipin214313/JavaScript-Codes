@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>take user input and TAKE alert</title>
+</head>
+<body>
+    <h1>Simple Form</h1>
+    <form onsubmit="  return validateForm()">
+        name:<input type="text"  id="name">
+        <button type="submit">submit</button>
+    </form>
+    <script>
+        function validateForm(){
+            let name=document.getElementById("name").value;
+
+            if( name.trim() === "" ){
+                
+                alert("Enter the usename");
+
+                return false;
+            }
+                return true;
+
+            }
+        
+    </script>
+</body>
+</html>

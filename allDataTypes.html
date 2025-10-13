@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All data Types Examples</title>
+</head>
+<body>
+    <script>
+        //primitive data types
+        let name="vipin";  //string
+        let age=30; //numbers
+        let isActive=true;  //Boolean
+        let contact= null;  //null
+        let address;   //undefined
+        console.log(name);     //vipin
+        console.log(age);       //30
+        console.log(isActive);  //true
+        console.log(contact);   //null
+        console.log(address);   //undefined
+
+        let userSymbol=Symbol("id");      //Symbol(id)
+        let bigNumbers=16666566632589496354652n;    //16666566632589496354652n
+        console.log(userSymbol);
+        console.log(bigNumbers);
+
+        //non-primitive numbers
+        let persion={        //object persion
+            name:"vipin",
+            age:25,
+            country:"india"
+        };
+        console.log(persion);    //access object 
+        console.log(persion.name);   //vipin
+        console.log(persion.age);     //25
+
+        let color=["red","yellow","green","orange"];   //array color
+        console.log(color);                         //(4) ['red', 'yellow', 'green', 'orange']
+        console.log(color.length);  //4
+        console.log(color[2]);  //green
+        function add(a,b){      
+            return a+b;
+
+        }
+        console.log(add(5,7));    //12
+    </script>
+    
+</body>
+</html>

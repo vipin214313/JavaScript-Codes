@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Items Example</title>
+</head>
+<body>
+    <h2>Shopping Cart Example</h2>  <!-- heading -->
+    <button onclick="addItem()">Add Item</button>  <!-- button -->
+
+    <script>
+        let cart = [];                  // empty cart array
+        let items = ["Laptop", "iPhone", "Desktop"]; // available items
+
+        // Function to add items to cart
+        function addItem() {
+            if (cart.length < items.length) {
+                cart.push(items[cart.length]); // add next item
+                console.log("Cart updated: ", cart); // debug output
+            } else {
+                console.log("No more items to add!");
+            }
+        }
+    </script>
+</body>
+</html>

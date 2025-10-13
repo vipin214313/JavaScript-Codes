@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task Input alert</title>
+</head>
+<body>
+    <h2>task Input</h2>
+    <input type="text" name="name" id="taskInput" placeholder="Enter the task">  <!--take user input-->
+    <button onclick="addTask()">click me </button>     <!--button add task when click it-->
+    <script>
+        //userd definig function 
+function addTask(){
+    let task =document.getElementById("taskInput").value.trim();  //accessing  user values used here remove for whitw spaces
+    if(task){
+        alert("task added :"+task);
+    }else{
+        alert("please enter the task ");
+    }
+}
+    </script>
+    
+</body>
+</html>

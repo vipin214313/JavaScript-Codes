@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Time Clock</title>
+</head>
+<body>
+    <div id="clock-conatiners">
+    <h1>Date Time Clock </h1>  <!--heading-->
+    <p id="clock"></p>  <!--here show  time -->
+        <p id="date"></p> <!--show date here-->
+    </div>
+
+    <script>
+        //function updated every second time and show current date
+        function showdateTime(){
+            let  now = new Date();  //creating new date object
+         let time=now .toLocaleTimeString("en-eu",{hour12:true});     // Convert time to 12-hour format with AM/PM
+        let date2 = now.toLocaleDateString("en-GB", { 
+        weekday: "long", 
+        year: "numeric", 
+        month: "long", 
+        day: "numeric" 
+      });    // Convert date to a readable format (e.g., Monday, 13 October 2025)
+
+      document.getElementById("clock").innerHTML=time;  //upadted time in p tag
+      document.getElementById("date").innerHTML=date2;  //updated date in p tag
+
+        }
+        setInterval(showdateTime,1000);   // Call function every second
+        showdateTime();     // Call immediately on load
+    </script>
+    
+</body>
+</html>

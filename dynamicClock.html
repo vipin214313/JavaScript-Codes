@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live clock Examples</title>
+</head>
+<body>
+    <h1>Dynamic Clock</h1>         <!--Heading-->
+    <p id="clock"></p>     <!--updated the  clock here-->
+    <script>
+        //function updatedClock()  updated every second time
+        function updatedClock(){
+            let now=new Date ();    // Create a new Date object for current system time
+
+            let currentTime=now.toLocaleTimeString("en-us",({hour12:true}));//convert the current time to  readable  local time formate (e.g., 10:25:45 AM)
+
+              // Display the time inside the <p> tag using innerHTML
+            document.getElementById("clock").innerHTML=currentTime;
+
+        }
+            // Call the function every 1 second (1000 ms)
+        setInterval(updatedClock,1000);
+        
+    // Call once immediately so it doesn't wait 1 second to show time
+        updatedClock();
+    </script>
+</body>
+</html>

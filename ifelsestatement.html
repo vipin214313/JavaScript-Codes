@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-else statement examples</title>
+</head>
+<body>
+    <script>
+        let age=25;
+        if(age>=18){
+            console.log("u are minor foe votes ");
+
+        }else{
+            console.log("u are not eligible for votes");
+        }
+    </script>
+    <script>
+        let marks=85;
+        if(marks>=33){
+            console.log("u are passed");
+            if(marks>=75){
+                console.log("u are passed with distaction");
+            }else{
+                console.log("u are not passed with distaction");
+            }
+
+        }else{
+            console.log("u are fail");
+        }
+    </script>
+    <script>
+        const num=0;
+        if(num>0){
+            console.log("the given number is pastive number");
+        }else if(num <0){
+            console.log("given number is negative numbers");
+        }else{
+            console.log("the given number is negative numbers");
+        }
+    </script>
+    <script>
+        let day=3;
+        let dayName;
+
+        switch(day){
+            case 1:
+                dayName="monday";
+                break;
+                case 2:
+                    dayName="Tuesday";
+                    break;
+                    case 3:
+                        dayName="Wednesday";
+                        break;
+                        case 4:
+                        dayName="Thursday";
+                        break;
+                        case 5:
+                        dayName="Friday";
+                        break;
+                        case 6:
+                        dayName="Saturday";
+                        break;
+                        case 7:
+                        dayName="Sunday";
+                        break;
+                        default:
+                            dayName="invalid day";
+                    }
+                    console.log(dayName);
+    </script>
+    <script>
+        let age1=21;
+         let results=(age1>=18)?"u are eligible for votes":"u are not eligible for votes";
+         console.log(results);
+    </script>
+    <script>
+        let Weather ="Sunny";
+        let Tempreture=25;
+        if(Weather==="Sunny"){
+            if(Tempreture>30){
+                console.log("Hot Day");
+            }else if(Tempreture>20){
+                console.log("Warm Day");
+            }else {
+                console.log("Cool Day");
+            }
+        }else if(Weather ==='Rainy'){
+            console.log("Take Umbrella");
+        }else{
+            console.log("Check ForCost");
+        }
+    </script>
+</body>
+</html>
