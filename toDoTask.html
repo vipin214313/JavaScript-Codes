@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Task Example</title>
+</head>
+<body>
+    <h2>My Todo Task</h2>
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button onclick="addtask()">Add Task</button>
+
+    <ul id="taskList"></ul>
+
+    <script>
+        let todo = [];
+
+        function addtask() {
+            let input = document.getElementById("taskInput");
+            let task = input.value.trim();
+
+            if (task) {
+                todo.push(task);
+                addDisplay();
+                input.value = "";
+            } else {
+                alert("Please enter a task!");
+            }
+        }
+
+        function addDisplay() {
+            let list = document.getElementById("taskList");
+            list.innerHTML = ""; // clear old list
+
+            todo.forEach((t) => {
+                let li = document.createElement("li");
+                li.textContent = t;
+                list.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>

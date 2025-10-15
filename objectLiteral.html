@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literlas Examples</title>
+</head>
+<body>
+    <h1>Creating object vai object Literla Method </h1>
+    <script>
+        let emp={
+            name:"sameer",
+            age:13,
+            salary:5000
+        };
+        console.log(emp);
+        const persion={
+            name:"vijay",
+            age:30,
+            city:'Delhi',
+            greet:function(){
+                console.log("hellow , my name is .."+this.name);
+            }
+        };
+        console.log(persion.name);
+        persion.greet();
+    </script>
+    
+</body>
+</html>

@@ -201,5 +201,13 @@ do...while	Runs at least once, then checks condition
 for...in	Loops through object properties
 for...of	Loops through iterable values (arrays, strings, etc.)
 
+Object:- Object is a collection of property(state/data) and method(behaviours),where propert define the object state and method describe the object behaviour.
+in object data are stored key values pair.
+
+how many types to creat object
+1-object litrel:simple inside curly bracess{} in the form of key value pair.
+2-new object keywors:-slightly more verbose but usefull for creating step by step object.
+
+
 
 
