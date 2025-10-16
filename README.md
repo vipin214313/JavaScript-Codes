@@ -207,6 +207,8 @@ in object data are stored key values pair.
 how many types to creat object
 1-object litrel:simple inside curly bracess{} in the form of key value pair.
 2-new object keywors:-slightly more verbose but usefull for creating step by step object.
+3-constructors object:it is creating create multipule similar objects efficiently.each object is set each and own property and method and you can changed it laters.
+4-object.create():it is inbuild object wich are used to create a new object and set the property se manuals.
 
 
 

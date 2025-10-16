@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object literlas Examples</title>
+</head>
+<body>
+    <script>
+        let objectNew={
+            name:"radhat",
+            id:104,
+            salary:5000
+        };
+        console.log(objectNew);
+        console.log(objectNew.name);
+        console.log(objectNew.id);
+        console.log(objectNew.salary);
+    </script>
+    <script>
+        //using new object( )  keywords
+        let obj4=new Object();
+        obj4.name="rani";
+        obj4.id=1033;
+        obj4.salary=45500;
+
+        console.log(obj4.name,obj4.id,obj4.salary);
+        console.log(obj4);
+    </script>
+    <script>
+        function obj6(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        const userObj=new obj6("ritesh",1045);
+        console.log(userObj);
+
+        //classed based morden way
+        class obj8{
+            constructor(name,age){
+                this.name=name;
+                this.age=age
+            }
+            greet(){
+                console.log("hellow js ...");
+            }
+        }
+        const pursion5=new obj8("vipin",26);
+        //console.log(obj8);
+        console.log(pursion5.name);
+        console.log(pursion5.age);
+        pursion5.greet();
+    </script>
+    <script>
+        let vehical={
+            wheels:4,
+            start:function(){
+                console.log("vehical strated...");
+            }
+        }
+        const g=Object.create(vehical);
+        g.brand="tesla";
+        g.color="red";
+        console.log(g.brand);
+        console.log(g.wheels);
+        g.start();
+        console.log(Object.getPrototypeOf(g)===vehical);
+        console.log(g.__proto__===vehical);
+        console.log(g.__proto__ === vehical); // true
+    </script>
+    
+</body>
+</html>

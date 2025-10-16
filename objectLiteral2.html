@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object Literal </title>
+</head>
+<body>
+    <script>
+        let obj={
+            id:101,
+            name:"vipin",
+            age:25
+        };
+        console.log(obj);
+
+        const persion={
+            name:"raju",
+            id:102,
+            salary:5000,
+            greet:function(){
+                    console.log("Hellow my name is ",this.name);
+            }
+        }
+        console.log(persion.name);
+        persion.greet();
+    </script>
+    <script>
+        var emp =new Object();
+        emp.name="ram";
+        emp.id=103;
+        emp.salary=20000;
+        emp.greet=function(){
+            console.log("hellow");
+        }
+        console.log(emp.name,emp.id,emp.salary);
+        console.log(emp.salary);
+        emp.greet();
+    </script>
+    <script>
+        //constructors function
+        function persion2(name,age){
+            this.name=name;
+            this.age=age;
+
+        }
+        const user=new persion2("rahul",30);
+        console.log(user.name);
+        console.log(user.age);
+
+        //class based
+        class persion3{
+            constructor(name,age){
+                this.name=name;
+                this.age=age;
+            }
+        }
+            const userst=new persion3("rinku Singh",40);
+            console.log(userst.name);
+            console.log(userst.age);
+    </script>
+    <script>
+        let vehical={
+            wheels:4,
+            start:function(){
+                    console.log("vehical start..");
+            }
+        }
+        const car=Object.create(vehical);
+        car.brand="tesla";
+        car.color="red";
+        console.log(car.brand);
+        console.log(car.wheels);
+        car.start();
+    </script>
+    
+</body>
+</html>
