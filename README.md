@@ -210,6 +210,11 @@ how many types to creat object
 3-constructors object:it is creating create multipule similar objects efficiently.each object is set each and own property and method and you can changed it laters.
 4-object.create():it is inbuild object wich are used to create a new object and set the property se manuals.
 
+1-object lireals:it is simple and most commin way to creating object.it involves declaring object in the form of key-values pairs directly inside curly {} curly bracket.
+
+function:
+
+
 
 
 
