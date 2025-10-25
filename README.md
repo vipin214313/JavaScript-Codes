@@ -212,7 +212,33 @@ how many types to creat object
 
 1-object lireals:it is simple and most commin way to creating object.it involves declaring object in the form of key-values pairs directly inside curly {} curly bracket.
 
-function:
+function:javascript function is a specific block of code is designed to perform spacefic tasks.they take input ,perform operation ,and give me output.
+syntax:
+function functionName(){
+    //code id here
+}
+
+Advantages:
+    1. Code Reusability: Write once, use multiple times.
+    2. Less Coding: Makes programs compact and avoids redundancy.
+    3. Modularity: Breaks complex problems into smaller pieces.
+    4. Maintainability: Change code in one place without affecting the rest.
+Example:
+function welcome() {
+    console.log("Welcome to GfG");
+}
+JavaScript Function Expression
+A function expression is when a function is assigned to a variable. Unlike function declarations, it does not require a name (can be anonymous) and is not hoisted.
+
+1. Syntax
+const functionName = function(parameters) {
+    // function body
+};
+Example:
+const greet = function(name) {
+    return `Hello, ${name}!`;
+};
+console.log(greet("Meeta")); // Output: Hello, Meeta!
 
 
 

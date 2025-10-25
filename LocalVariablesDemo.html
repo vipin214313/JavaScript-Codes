@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local Variables Examples</title>
+</head>
+<body>
+    <script>
+        //local variables examples
+      
+      
+         function mufun(){
+               var a=30;
+         let n=20;
+         const c=10;
+            console.log(a); //30
+            console.log(n);//40
+            console.log(c);//10
+            if(true){
+                console.log(a); //30
+                console.log(n);//40
+                 console.log(c);//10
+                      var a2=30;
+         let n2=20;
+         const c2=10;
+
+            }
+            console.log(a2);  //30
+          //  console.log(n2); //refrence error  n2 not define
+            //console.log(c2); //refrence error    c2 not defines
+         }
+         mufun();
+         console.log(a);  //a not defined
+         console.log(n2);  //n2 mot defined
+         console.log(c2);  //c2 not defined
+    </script>
+    
+</body>
+</html>

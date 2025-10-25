@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>this is a web content</p>
+    <h1>this is a heading tag</h1>
+    <button onclick="myfun()">click me</button>
+    <button onclick="alert('Hellow alert...')">click</button>
+    <button onclick="window.print()">print page </button>
+    <script>
+        function myfun(){
+            document.write("page erasd and replaced with this text..");
+        }
+    </script>
+    <button onclick="askNme()">welcome</button>
+    <script>
+        
+        function askNme(){
+            let user=prompt( " Pleased, Enter the name ");
+
+            if(user){
+                alert(`Welcome to ${user} my website`);
+            }else{
+                alert("Cancel the prompt box");
+            }
+        }
+    </script>
+</body>
+</html>
